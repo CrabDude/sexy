@@ -150,7 +150,7 @@ However, if the previous invocation returns a function and needs a function pass
 	});
 
 
-## API Gray Areas / Ambiguity
+## API Gray Areas & Ambiguity
 
 Obviously there are some VERY gray areas in the API. However, I am confident that these can be matured and resolved in future versions. Below is just a highlight of the current API ambiguities and/or shortcomings.
 
@@ -158,12 +158,12 @@ Obviously there are some VERY gray areas in the API. However, I am confident tha
 * Functions returned from an invocation require $xy.undef
 * Non-sequential asynchronous callbacks can create ambigous or breaking behavior:
 
-	// This will FAIL as the callback never gets called and thus ".listen" is never executed.
-	$xy(http).createServer(function (request, response) {
-		// This will only 
-		response.writeHead(200, {'Content-Type': 'text/plain'});
-		response.end('Hello World\n');
-	}).listen(8124)
+		// This will FAIL as the callback never gets called and thus ".listen" is never executed.
+		$xy(http).createServer(function (request, response) {
+			// This will only 
+			response.writeHead(200, {'Content-Type': 'text/plain'});
+			response.end('Hello World\n');
+		}).listen(8124)
 
 * Multiple asynchronous callbacks invocations will break as Sexy will never know when the final callback has been invoked and can thus proceed to the next step in the sequence. 
 
