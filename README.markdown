@@ -3,7 +3,8 @@
 
 A control-flow library for writing sequential asynchronous code in a synchronous style format.
 
-Utilizes
+Utilizes:
+
 * [ECMAScript5 Proxies](http://wiki.ecmascript.org/doku.php?id=harmony:proxies)
 * [Step](http://github.com/creationix/step)
 
