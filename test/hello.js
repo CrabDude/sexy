@@ -1,0 +1,1 @@
+var hello = 'This is the first half of our "hello world" demo';
