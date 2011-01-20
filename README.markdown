@@ -3,9 +3,9 @@
 
 A control-flow library for writing sequential asynchronous code in a synchronous style format.
 
-Utilizes:
-* ECMAScript5 [Proxies](http://wiki.ecmascript.org/doku.php?id=harmony:proxies)
-* Tim Caswell's [Step](http://github.com/creationix/step)
+Utilizes
+* [ECMAScript5 Proxies](http://wiki.ecmascript.org/doku.php?id=harmony:proxies)
+* [Step](http://github.com/creationix/step)
 
 ## Alpha Alert
 
